@@ -1,0 +1,17 @@
+
+<h1 class="title"><span style="color: #000000;">ADDING</span> USER</h1>
+<form #recievedUser="ngForm">
+
+  <label style="color:#000000; font-size:22px;" for="name">Name</label>
+  <input style="border-radius:50px;" type="text" class="form-control" id="name" placeholder="user name" [(ngModel)]="user.name" name="name">
+
+  <label style="color:#000000; font-size:22px;" for="type">Type</label>
+  <input style="border-radius:50px;" type="text" class="form-control" id="type" placeholder="type name" [(ngModel)]="user.type" name="name">
+
+  <label style="color:#000000; font-size:22px;" for="password">Password</label>
+  <input style="border-radius:50px;" type="password" class="form-control" id="password" placeholder="password" [(ngModel)]="user.password" name="password">
+
+   <br>
+  <button type="button" class="btn btn-blue btn-success" (click)="addUser()">Save User</button>
+  <br><br>
+</form>

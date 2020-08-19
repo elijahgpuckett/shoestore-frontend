@@ -1,0 +1,37 @@
+<div class="shoeDetails">
+<h1 class="title"><span style="color: #000000;">SHOES</span> DETAILS</h1>
+<div style="overflow-x:auto;"> 
+    <table>
+        <tr>
+            <td>Shoe Id</td>
+            <td>{{shoe.id}}</td>
+        </tr>
+        <tr>
+            <td>Shoe Name</td>
+            <td>{{shoe.name}}</td>
+        </tr>
+        <tr>
+            <td>Shoe Brand</td>
+            <td>{{shoe.brand}}</td>
+        </tr>
+        <tr>
+            <td>Shoe Size</td>
+            <td>{{shoe.size}}</td>
+        </tr>
+        <tr>
+            <td>Shoe Price</td>
+            <td>{{shoe.price}}</td>
+        </tr>
+        <tr>
+            <td>Shoe Pic</td>
+            <td>{{shoe.pic}}</td>
+        </tr>
+    </table>
+    </div>   
+    <br>
+    <img src={{shoe.pic}} height="200" width="300">
+    <br><br>
+    <a class="btn btn-small btn-warning" (click)="editShoe()">EDIT SHOE</a>&nbsp;&nbsp;&nbsp;
+    <a class="btn btn-small btn-danger" (click)="deleteShoe()">DELETE SHOE</a>
+</div>
+<br><br>

@@ -1,0 +1,24 @@
+<h1 class="title">{{shoe.id == null ? 'Add' : 'Edit'}} Shoe - {{shoe.id}}</h1>
+<form>
+  <label style="color:#000000; font-size:22px;" for="brand">Brand</label>
+  <input style="border-radius:50px;" type="text" class="form-control" id="brand" placeholder="Shoe Brand" [(ngModel)]="shoe.brand" name="brand">
+  <br>
+  <label style="color:#000000; font-size:22px;" for="name">Name</label>
+  <input style="border-radius:50px;" type="text" class="form-control" id="name" placeholder="Shoe Name" [(ngModel)]="shoe.name" name="name">
+  <br>
+  <label style="color:#000000; font-size:22px;" for="price">Price</label>
+  <input style="border-radius:50px;" type="text" class="form-control" id="price" placeholder="Price" [(ngModel)]="shoe.price" name="price">
+  <br>
+  <label style="color:#000000; font-size:22px;" for="size">Size</label>
+  <input style="border-radius:50px;" type="text" class="form-control" id="size" placeholder="Size" [(ngModel)]="shoe.size" name="size">
+  <br> 
+  <label style="color:#000000; font-size:22px;" for="pic">Sneaker Picture</label>
+  <input style="border-radius:50px;" type="text" class="form-control" id="pic" placeholder="Pic" [(ngModel)]="shoe.pic" name="pic">
+    
+
+  <br>
+  <button type="button" class="btn btn-blue btn-success" (click)="saveShoe()">Save Shoe</button>
+  <br><br>
+
+</form>
+

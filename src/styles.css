@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background: linear-gradient( #fffefd, #f1ddc6);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+h1{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 32px;
+
+}
+
+header {
+    padding-bottom: 20px;
+}
+.btn-primary{
+    background-color: #ddd;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #999;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    background-color: #db0c05;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-success{
+    background-color: #db0c05;
+    color: white;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-success:hover {
+    background-color: #770603;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn-success:not(:disabled):not(.disabled).active, .btn-success:not(:disabled):not(.disabled):active, .show > .btn-success.dropdown-toggle {
+    background-color: #ddd;
+    border: none;
+    border-radius: 15px;
+}
+
+
+
+.btn-info,
+.btn-info:focus,
+.btn-info:visited {
+    background-color: #db0c05;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-primary.dropdown-toggle {
+    background-color: #770603;
+    border: none;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.btn-info:not(:disabled):not(.disabled).active, .btn-info:not(:disabled):not(.disabled):active, .show > .btn-info.dropdown-toggle {
+    background-color: black;
+    border:none;
+    box-shadow: none;
+}
+
+
+th{
+    letter-spacing: 1pt;
+    font-weight: 400;
+}

@@ -1,0 +1,21 @@
+.btn-blue{
+    background: rgb(154,6,11);
+    background: linear-gradient(90deg, rgba(154,6,11,1) 0%, rgba(211,24,31,1) 33%, rgba(152,8,13,1) 71%);
+    font-size: 16px;
+    padding: 5px;
+    border-radius:50px;
+}
+.btn-blue:hover{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,66,66,1) 33%, rgba(0,0,0,1) 71%);
+    font-size: 16px;
+    padding: 5px;
+    border-radius:50px;
+}
+.title
+{
+    font-size: 40px;
+    line-height: 40px;
+    color: #d3181f;
+    font-weight: 600;
+}

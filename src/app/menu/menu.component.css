@@ -1,0 +1,23 @@
+.menubar
+{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(70,66,66,1) 33%, rgba(0,0,0,1) 71%);
+}
+.top-bar
+{
+    background: rgb(154,6,11);
+    background: linear-gradient(90deg, rgba(154,6,11,1) 0%, rgba(211,24,31,1) 33%, rgba(152,8,13,1) 71%);
+    height: 35px;
+}
+.navbar-dark .navbar-nav .nav-link
+{
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.navbar-dark .navbar-nav .nav-link:hover
+{
+    color: #d3181f;
+    font-size: 20px;
+    margin-left: 20px;
+}

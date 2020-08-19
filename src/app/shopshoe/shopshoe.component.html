@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <h1 class="title"><span style="color: #000000;">OUR</span> SNEAKERS</h1>
+        </div>
+        <div class="col-md-10 custom-products-cart-container">
+            <div class="offset-md-8">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <br>
+                        <a href="#" class="btn btn-info btn-lg" data-toggle="dropdown" role="button" aria-expanded="false">
+                            <span class="fa fa-shopping-cart">
+                                Shoes Added In Cart:
+                            </span>
+                            <span class="caret">{{cartShoes.length}}</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-cart" role="menu">
+                            <li *ngFor="let item of cartShoes">
+                                <div class="item product-cart-item row">
+                                    <div class="col-md-8" *ngIf="item">{{item.name}}</div>
+                                    <div class="col-md-4" *ngIf="item"><strong>${{item.price}}</strong></div>
+                                </div>
+                            </li>
+                            <hr>
+                            <!--<li><a class="btn btn-small btn-success" role="button" (click)="goToCart()">View Cart</a></li>-->
+                            <li *ngIf="cartShoes.length > 0">
+                                <a class="btn btn-small btn-warning" role="button" (click)="emptyCart()">Empty Cart</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>   
+</div>
+
+<hr>
+<hr>
+
+
+
+<div class="container">
+    <div class="row">
+        <div style="margin-top:35px;" class="col-md-4" *ngFor="let shoe of shoes;let i=index">
+            <div class="card card-block">
+                <img class="custom-image-style" img src="{{shoe.pic}}" height="200" width="300" 
+                style="margin-left: 25px; margin-top: 25px;">
+                <div class="shoe-desc-container row">
+                    <div>
+                        <p style="margin-left: 40px; margin-top:15px;"><strong>{{shoe.brand}} {{shoe.name}}: ${{shoe.price}}</strong></p>
+                        <p style="margin-left: 40px">{{shoe.size}}</p>
+                    </div>
+                    <div class="offset-md-4 col-md-4">
+                        <br>
+                        <button style="margin-left: -12px;" class="btn btn-blue btn-primary btn-sm" (click)="addToCart(shoe.id)"
+                           >Add To Cart</button>
+                           <br><br>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    
+</div>
+<br><br>
